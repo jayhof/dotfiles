@@ -1,0 +1,9 @@
+[user]
+	name = Johannes Hofmann
+	email = johannes_hofmann@me.com
+[core]
+	excludesfile = /Users/jay/.gitignore_global
+[merge]
+	tool = vimdiff3
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches

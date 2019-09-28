@@ -1,0 +1,12 @@
+*
+
+!.gitignore
+
+!README.md
+!install.sh
+!.gitconfig
+!.gitignore_global
+!.vimrc
+!.zshrc
+
+!com.googlecode.iterm2.plist
