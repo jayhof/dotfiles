@@ -1,8 +1,13 @@
 #!/bin/sh
 
+ln -F -f -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -F -f -s ~/dotfiles/.gitignore_global ~/.gitignore_global
+ln -F -f -s ~/dotfiles/.vimrc ~/.vimrc
+ln -F -f -s ~/dotfiles/.zshrc ~/.zshrc
+
 # install homebrew
 if ! [ -x "$(command -v brew)" ]; then
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 else
 	echo "skipping homebrew install, already installed"
 fi
@@ -19,12 +24,11 @@ brew install \
 	yarn
 
 # brew casks
-brew tap \
-	homebrew/cask \
-	homebrew/cask-fonts \
-	homebrew/core \
+brew tap homebrew/cask
+brew tap homebrew/cask-fonts
+brew tap homebrew/core
 
-brew cask install \
+brew install --cask \
 	docker \
 	font-fira-code \
 	font-inconsolata-nerd-font \
