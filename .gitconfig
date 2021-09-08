@@ -3,6 +3,7 @@
 	email = johannes_hofmann@me.com
 [core]
 	excludesfile = /Users/jay/.gitignore_global
+	editor = /usr/bin/vim
 [merge]
 	tool = vimdiff3
 [alias]
