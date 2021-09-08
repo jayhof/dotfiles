@@ -21,7 +21,8 @@ brew install \
 	nvm \
 	the_silver_searcher \
 	vim \
-	yarn
+	yarn \
+	awscli
 
 # brew casks
 brew tap homebrew/cask
@@ -32,4 +33,5 @@ brew install --cask \
 	docker \
 	font-fira-code \
 	font-inconsolata-nerd-font \
-	iterm2 
+	iterm2 \
+	sequel-ace 
