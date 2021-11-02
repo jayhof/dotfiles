@@ -4,14 +4,14 @@
 [core]
 	excludesfile = /Users/jay/.gitignore_global
 	editor = /usr/bin/vim
+[includeIf "gitdir:~/Work/"]
+	path = ~/dotfiles/.gitconfig-webtec
 [merge]
 	tool = vimdiff3
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
 [init]
 	defaultBranch = main
-[includeIf "gitdir:~/Work/"]
-	path = ~/dotfiles/.gitconfig-webtec
 [pull]
 	rebase = false
 [pager]
@@ -23,3 +23,10 @@
 	diffFilter = delta --color-only --features=interactive
 [diff]
 	tool = delta
+[delta]
+	hunk-header-style = file line-number syntax
+	line-numbers-minus-style = "#9D1834"
+	minus-style = syntax "#300C18"
+	line-numbers-plus-style = "#248D24"
+	plus-style = syntax "#112811"
+	side-by-side = true
