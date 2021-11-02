@@ -8,10 +8,11 @@ ln -F -f -s ~/dotfiles/.zshrc ~/.zshrc
 # install homebrew
 if ! [ -x "$(command -v brew)" ]; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/jay/.zprofile
+	eval "$(/opt/homebrew/bin/brew shellenv)"
 else
 	echo "skipping homebrew install, already installed"
 fi
-
 
 # brew formulae
 brew install \
