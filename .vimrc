@@ -62,7 +62,7 @@ nnoremap <c-n> :bnext<cr>
 nnoremap <c-p> :bprev<cr>
 
 " git commit spell checking
-autocmd Filetype gitcommit spell
+autocmd Filetype gitcommit setlocal spell
 
 " NerdTree
 nnoremap <c-o> :NERDTreeToggle<cr>

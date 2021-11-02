@@ -71,6 +71,7 @@ plugins=(
   brew
   docker
   yarn
+  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -104,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias godot="/Applications/Godot.app/Contents/MacOS/Godot"
 
 # redefine prompt_context for hiding user@hostname
 prompt_context () { }
@@ -123,3 +125,4 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # PATH
 path+=("$HOME/.cargo/bin")
 export PATH
+

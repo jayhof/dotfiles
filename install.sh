@@ -22,7 +22,8 @@ brew install \
 	the_silver_searcher \
 	vim \
 	yarn \
-	awscli
+	awscli \
+	git-delta
 
 # brew casks
 brew tap homebrew/cask
@@ -34,4 +35,6 @@ brew install --cask \
 	font-fira-code \
 	font-inconsolata-nerd-font \
 	iterm2 \
-	sequel-ace 
+	sequel-ace \
+	responsively
+
