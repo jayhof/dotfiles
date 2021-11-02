@@ -24,7 +24,8 @@ brew install \
 	vim \
 	yarn \
 	awscli \
-	git-delta
+	git-delta \
+	direnv
 
 # brew casks
 brew tap homebrew/cask

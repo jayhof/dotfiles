@@ -15,6 +15,11 @@ My dotfiles for the macOS platform.
 - `$ ./install.sh`
 - Open iTerm Settings/General/Preferences and load from ~/dotfiles
 
+### Direnv
+
+Use [direnv](https://github.com/direnv/direnv) to configure path specific env variables.
+This is especially useful for `AWS_PROFILE`.
+
 ## References
 
 - [iTerm color scheme](https://github.com/Monokai/monokai-pro-sublime-text/issues/45)

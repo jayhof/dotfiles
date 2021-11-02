@@ -122,7 +122,9 @@ export NVM_DIR="$HOME/.nvm"
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# PATH
+# add cargo to the path
 path+=("$HOME/.cargo/bin")
 export PATH
 
+# hook up direnv
+eval "$(direnv hook zsh)"
