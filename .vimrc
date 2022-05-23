@@ -8,7 +8,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
-Plug 'phanviet/vim-monokai-pro'
+"Plug 'phanviet/vim-monokai-pro'
+Plug 'ayu-theme/ayu-vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -22,6 +23,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-commentary'
 Plug 'posva/vim-vue'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 
@@ -45,7 +48,9 @@ set noswapfile
 " colors
 set termguicolors
 set background=dark
-colorscheme monokai_pro
+"colorscheme monokai_pro
+let ayucolor="dark"
+colorscheme ayu
 
 " delete automatic indentation with backspace
 set backspace=indent,eol,start
@@ -74,8 +79,12 @@ let g:NERDTreeWinSize=24
 " ag
 let g:ackprg = 'ag --vimgrep'
 
+" custom files command to include hidden files
+command! -bang -nargs=? -complete=dir HFiles
+  \ call fzf#vim#files(<q-args>, {'source': 'ag --hidden --ignore .git -g ""'}, <bang>0)
+
 " fzf
-nmap <C-p> :Files<CR>
+nmap <C-p> :HFiles<CR>
 
 " lightline
 set noshowmode

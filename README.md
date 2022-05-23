@@ -23,5 +23,6 @@ This is especially useful for `AWS_PROFILE`.
 ## References
 
 - [iTerm color scheme](https://github.com/Monokai/monokai-pro-sublime-text/issues/45)
+- [ayu iTerm color scheme](https://github.com/hwyncho/ayu-iTerm)
 - [silver searcher](https://github.com/ggreer/the_silver_searcher)
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)

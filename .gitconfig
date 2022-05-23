@@ -4,7 +4,7 @@
 [core]
 	excludesfile = /Users/jay/.gitignore_global
 	editor = /usr/bin/vim
-[includeIf "gitdir:~/Work/"]
+[includeIf "gitdir:~/Work/webtec/gitlab"]
 	path = ~/dotfiles/.gitconfig-webtec
 [merge]
 	tool = vimdiff3

@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias godot="/Applications/Godot.app/Contents/MacOS/Godot"
+alias godot="/Applications/Godot/godot4"
 
 # redefine prompt_context for hiding user@hostname
 prompt_context () { }
@@ -122,9 +122,13 @@ export NVM_DIR="$HOME/.nvm"
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+# add homebrew bin to path
+export PATH="/opt/homebrew/bin:$PATH"
+
 # add cargo to the path
 path+=("$HOME/.cargo/bin")
 export PATH
 
 # hook up direnv
 eval "$(direnv hook zsh)"
+export PATH="/opt/homebrew/opt/kubernetes-cli@1.22/bin:$PATH"
