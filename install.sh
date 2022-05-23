@@ -14,6 +14,10 @@ else
 	echo "skipping homebrew install, already installed"
 fi
 
+# tap additional repositories
+brew tap dart-lang/dart
+brew tap weaveworks/tap
+
 # brew formulae
 brew install \
 	composer \
@@ -25,7 +29,18 @@ brew install \
 	yarn \
 	awscli \
 	git-delta \
-	direnv
+	direnv \
+	drud/ddev/ddev \
+	cocoapods \
+	dart \
+	kubectl \
+	kubectx \
+	kube-ps1 \
+	weaveworks/tap/eksctl \
+	llvm \
+	go \
+	rustup \
+	pnpm
 
 # brew casks
 brew tap homebrew/cask
@@ -38,5 +53,5 @@ brew install --cask \
 	font-inconsolata-nerd-font \
 	iterm2 \
 	sequel-ace \
-	responsively
-
+	responsively \
+	flutter
